@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Heroes/ responsive Movie landing page Desing</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Heroes</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="#" style="--i:1;">Home</a></li>
+                <li><a href="https://canaltech.com.br/quadrinhos/18-personagens-da-dc-e-da-marvel-que-sao-quase-a-mesma-coisa-153857/" style="--i:2;">Characters</a></li>
+                <li><a href="https://www.maisgoias.com.br/blog-post/telemania/25-melhores-filmes-de-super-heroi-do-cinema/" style="--i:3;">Movies</a></li>
+                <li><a href="https://www.marvel.com/games" style="--i:4;">Games</a></li>
+                <li><a href="https://www.compreculturama.com.br/infantil/365-desenhos-para-colorir-marvel" style="--i:5;">More</a></li>
+            </ul>
+        </header>
+        <div class="container">
+            <div class="box" style="--i:3;">
+                <div class="imgBx">
+                    <img src="img1.jpg" alt="">
+                    </div>
+                    </div>
+                    <div class="box"style="--i:4;">
+                        <div class="imgBx">
+                            <img src="img2 (1).jpg" alt="">
+                            </div>
+                            </div>
+                            <div class="box"style="--i:5;">
+                                <div class="imgBx">
+                                    <img src="img3.jpg" alt="">
+                                    </div>
+                                    </div>
+                                      <div class="box"style="--i:6;">
+                                        <div class="imgBx">
+                                        <img src="img4.jpg" alt="">
+                                        
+         </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="sci">
+            <li><a href="https://www.facebook.com/"style="--i:9;">Facebook</a></li>
+            <li><a href="https://www.instagram.com/"style="--i:8;">Instagram</a></li>
+            <li><a href="https://twitter.com/home?lang=pt"style="--i:7;">Twitter</a></li>
+            </ul>
+            <p class="copyrightText">Desenvolvedor:@Mário lima</p>
+        </div>
+    </section>
+  <script>
+      let imgBx = document.querySelectorAll('.imgBx');
+imgBx.forEach(popup =>popup.addEventListener('click',()=>{
+    popup.classList.toggle('active');
+}))
+         
+    function toggleMenu(){
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
